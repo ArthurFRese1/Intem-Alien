@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var ARQUIVO_DADOS = 'dados/itens.json';
+  var ARQUIVOS_DADOS = ['dados/itens.json', 'itens.json', 'Dados/itens.json', 'dados/Itens.json'];
   var CHAVE_PERSONALIZADOS = 'alienitens.personalizados.v1';
   var CHAVE_VISUAL = 'alienitens.visualizacao.v1';
   var CATEGORIA_PADRAO = 'Personalizados';
@@ -84,26 +84,51 @@
   }
 
   /* ---------- carregamento dos dados ---------- */
+  function enderecoCompleto(u) {
+    try { return new URL(u, document.baseURI).href; } catch (x) { return u; }
+  }
   function carregarDados() {
-    return fetch(ARQUIVO_DADOS, { cache: 'no-cache' }).then(function (r) {
-      if (!r.ok) throw new Error('O servidor respondeu com status ' + r.status + '.');
-      return r.json();
-    }).then(function (json) {
+    var tentativas = [];
+    function aceitar(json, url) {
       var lista = Array.isArray(json) ? json : json && json.itens;
-      if (!Array.isArray(lista)) throw new Error('O arquivo não contém uma lista de itens válida.');
+      if (!Array.isArray(lista)) throw new Error('O arquivo ' + enderecoCompleto(url) + ' foi encontrado, mas não contém uma lista de itens válida.');
       estado.originais = lista.filter(function (i) { return i && i.id && i.nome; });
-    });
+    }
+    function tentar(n) {
+      if (n >= ARQUIVOS_DADOS.length) {
+        var falha = new Error('nenhum dos endereços respondeu');
+        falha.tentativas = tentativas;
+        throw falha;
+      }
+      var url = ARQUIVOS_DADOS[n];
+      return fetch(url, { cache: 'no-cache' }).then(function (r) {
+        if (!r.ok) {
+          tentativas.push(enderecoCompleto(url) + '  →  status ' + r.status);
+          return tentar(n + 1);
+        }
+        return r.json().then(function (json) { aceitar(json, url); }, function () {
+          throw new Error('O arquivo ' + enderecoCompleto(url) + ' foi encontrado, mas o JSON é inválido (erro de vírgula, aspas ou chaves).');
+        });
+      }, function (e) {
+        tentativas.push(enderecoCompleto(url) + '  →  ' + (e && e.message ? e.message : 'falha de rede'));
+        return tentar(n + 1);
+      });
+    }
+    return tentar(0);
   }
   function mostrarErroCarregamento(e) {
     elErro.hidden = false;
     elErro.textContent = '';
     elErro.appendChild(el('strong', null, 'Não foi possível carregar o catálogo de itens.'));
-    var url = ARQUIVO_DADOS;
-    try { url = new URL(ARQUIVO_DADOS, document.baseURI).href; } catch (x) { /* mantém o caminho relativo */ }
-    elErro.appendChild(el('span', null, 'Endereço tentado: ' + url + ' — copie esse endereço e cole numa nova aba do navegador para ver se o arquivo abre. '));
-    elErro.appendChild(el('span', null, 'O arquivo "' + ARQUIVO_DADOS + '" não pôde ser lido (' + (e && e.message ? e.message : 'erro desconhecido') +
-      '). Abra o projeto por um servidor local, como o Live Server do VS Code, e não clicando diretamente no arquivo index.html. ' +
-      'Confira também se a pasta "dados" e o arquivo itens.json existem e se o JSON é válido.'));
+    if (e && e.tentativas) {
+      elErro.appendChild(el('span', null, 'O site procurou o arquivo de dados nestes endereços e não encontrou:'));
+      var ul = el('ul');
+      e.tentativas.forEach(function (t) { ul.appendChild(el('li', null, t)); });
+      elErro.appendChild(ul);
+      elErro.appendChild(el('span', null, 'Confira no GitHub se existe a pasta "dados" (minúscula) com o arquivo "itens.json" dentro, na mesma pasta do index.html. Se estiver rodando no computador, abra pelo Live Server do VS Code e não clicando direto no index.html.'));
+    } else {
+      elErro.appendChild(el('span', null, (e && e.message ? e.message : 'Erro desconhecido.') + ' Se estiver rodando no computador, use o Live Server do VS Code.'));
+    }
   }
 
   /* ---------- filtros ---------- */
