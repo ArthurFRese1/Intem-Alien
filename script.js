@@ -98,6 +98,9 @@
     elErro.hidden = false;
     elErro.textContent = '';
     elErro.appendChild(el('strong', null, 'Não foi possível carregar o catálogo de itens.'));
+    var url = ARQUIVO_DADOS;
+    try { url = new URL(ARQUIVO_DADOS, document.baseURI).href; } catch (x) { /* mantém o caminho relativo */ }
+    elErro.appendChild(el('span', null, 'Endereço tentado: ' + url + ' — copie esse endereço e cole numa nova aba do navegador para ver se o arquivo abre. '));
     elErro.appendChild(el('span', null, 'O arquivo "' + ARQUIVO_DADOS + '" não pôde ser lido (' + (e && e.message ? e.message : 'erro desconhecido') +
       '). Abra o projeto por um servidor local, como o Live Server do VS Code, e não clicando diretamente no arquivo index.html. ' +
       'Confira também se a pasta "dados" e o arquivo itens.json existem e se o JSON é válido.'));
