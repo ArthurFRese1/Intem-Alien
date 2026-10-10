@@ -1,0 +1,11 @@
+ALIEN RPG — Banco de Itens
+Versão: 1.0.0
+Data: 2026-10-09
+
+Conteúdo desta versão:
+- Catálogo inicial com 88 itens do Livro Básico (capítulo 6, Equipamento).
+- Pesquisa, filtros combináveis, ordenação, modos grade e lista.
+- Janela de detalhes, cadastro e exclusão de itens personalizados (LocalStorage).
+
+Cobertura: PARCIAL. Ainda não foram incluídos itens de outros capítulos do livro
+nem de outros suplementos. O catálogo está preparado para expansão (veja LEIA-ME.txt).

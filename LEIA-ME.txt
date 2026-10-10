@@ -1,0 +1,70 @@
+ALIEN RPG — BANCO DE ITENS
+==========================
+
+Site independente de consulta de itens de ALIEN RPG (HTML, CSS, JavaScript e JSON).
+Não depende de outros sites nem de APIs externas.
+
+COMO EXECUTAR
+-------------
+O site lê o arquivo dados/itens.json, então precisa rodar por um servidor local
+(abrir o index.html com duplo clique NÃO funciona em vários navegadores).
+
+1. Instale o Visual Studio Code (https://code.visualstudio.com).
+2. Dentro do VS Code, abra a extensão "Live Server" (Ritwick Dey) e instale.
+3. Use "Arquivo > Abrir Pasta..." e escolha a pasta AlienItens.
+4. Clique com o botão direito em index.html e escolha "Open with Live Server".
+5. O navegador abrirá o catálogo (normalmente em http://127.0.0.1:5500).
+
+Alternativa sem VS Code (precisa de Python): na pasta AlienItens, execute
+  python -m http.server 8000
+e abra http://localhost:8000 no navegador.
+
+ESTRUTURA
+---------
+index.html    Estrutura da página
+style.css     Visual (tema escuro, responsivo)
+script.js     Funcionalidades
+dados/itens.json   Banco de dados dos itens originais
+VERSAO.txt    Versão atual
+LEIA-ME.txt   Este arquivo
+
+ITENS PERSONALIZADOS
+--------------------
+Use o botão "+ Adicionar item". Os itens ficam no LocalStorage do navegador,
+separados do catálogo original, e continuam disponíveis ao reabrir o navegador
+(a menos que os dados do site sejam apagados). Para excluir, abra o item e use
+"Excluir item" (há confirmação). Os dados originais nunca são apagados.
+Observação: o LocalStorage é por navegador e por endereço; mudar de navegador
+ou de porta do Live Server mostra uma lista de personalizados diferente.
+
+COMO ADICIONAR ITENS AO CATÁLOGO ORIGINAL
+-----------------------------------------
+Edite dados/itens.json e acrescente objetos na lista "itens". Campos:
+
+  id           Identificador único, sem espaços (ex.: "faca-de-combate")
+  nome         Nome do item
+  categoria    Ex.: Armas, Proteção, Tecnologia, Medicina, Suprimentos...
+  tipo         Subtipo (ex.: Pistola, Traje, Fármaco)
+  raridade     Deixe "" se o livro não informar. O filtro de raridade só
+               aparece quando algum item tem esse campo preenchido.
+  fabricante   Deixe "" se não informado
+  descricao    Resumo próprio (não copie trechos do livro)
+  atributos    Pares "Rótulo": "Valor" exibidos nos detalhes, na ordem escrita
+  tags         Lista de palavras-chave para a pesquisa
+  fonte        Ex.: "Livro Básico, cap. 6, p. 120"
+  observacao   (opcional) divergências ou avisos sobre os dados
+
+As categorias, tipos e filtros se atualizam sozinhos a partir do JSON.
+Depois de editar, valide o JSON (vírgulas e aspas) e recarregue a página.
+
+SOBRE O CONTEÚDO
+----------------
+- Os valores de armas, trajes, veículos etc. seguem as tabelas do capítulo 6 do
+  Livro Básico em português. Em alguns itens as ilustrações do livro mostram
+  números diferentes das tabelas; isso está indicado no campo "Observação".
+- As descrições são resumos próprios, não reproduzem o texto do livro.
+- Campos sem informação ficam vazios; nada foi inventado.
+- Não foram incluídas linhas que não são objetos (ex.: "Ataque Desarmado").
+- "Pistola de Parafuso Watatsumi DV-303" e "Maçarico Mecânico de Corte" aparecem
+  uma única vez (em Armas); o uso como ferramenta consta nos detalhes.
+- O catálogo NÃO está completo: esta versão cobre o capítulo 6 do Livro Básico.

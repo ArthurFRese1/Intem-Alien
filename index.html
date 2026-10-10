@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALIEN RPG — Banco de Itens</title>
+  <meta name="description" content="Catálogo de consulta de itens de ALIEN RPG.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <div class="marca">
+        <span class="marca-icone" aria-hidden="true">&#9651;</span>
+        <div>
+          <h1 class="marca-nome">ALIEN RPG</h1>
+          <p class="marca-sub">Banco de Itens</p>
+        </div>
+      </div>
+      <button type="button" class="botao botao-destaque" id="btn-adicionar">+ Adicionar item</button>
+    </div>
+  </header>
+
+  <main class="pagina">
+
+    <section class="apresentacao">
+      <h2>Catálogo de itens</h2>
+      <p>Consulte armas, proteções, tecnologia, medicina, suprimentos e veículos. Pesquise, filtre e abra cada item para ver os detalhes. Você também pode cadastrar itens próprios, que ficam salvos neste navegador.</p>
+    </section>
+
+    <section class="estatisticas" aria-label="Estatísticas">
+      <div class="estatistica">
+        <span class="estatistica-valor" id="stat-total">0</span>
+        <span class="estatistica-rotulo">Itens cadastrados</span>
+      </div>
+      <div class="estatistica">
+        <span class="estatistica-valor" id="stat-resultados">0</span>
+        <span class="estatistica-rotulo">Resultados</span>
+      </div>
+      <div class="estatistica">
+        <span class="estatistica-valor" id="stat-categorias">0</span>
+        <span class="estatistica-rotulo">Categorias</span>
+      </div>
+    </section>
+
+    <section class="painel controles" aria-label="Pesquisa e filtros">
+      <label class="campo-busca" for="busca">
+        <span class="sr-only">Pesquisar itens</span>
+        <input type="search" id="busca" placeholder="Pesquisar itens, fabricantes, palavras-chave…" autocomplete="off">
+      </label>
+
+      <div class="rapidos" id="rapidos" role="group" aria-label="Categorias rápidas"></div>
+
+      <div class="filtros">
+        <label class="filtro">
+          <span>Categoria</span>
+          <select id="filtro-categoria"></select>
+        </label>
+        <label class="filtro">
+          <span>Tipo</span>
+          <select id="filtro-tipo"></select>
+        </label>
+        <label class="filtro" id="grupo-raridade" hidden>
+          <span>Raridade</span>
+          <select id="filtro-raridade"></select>
+        </label>
+        <label class="filtro">
+          <span>Ordenar por</span>
+          <select id="ordenacao">
+            <option value="nome-asc">Nome (A a Z)</option>
+            <option value="nome-desc">Nome (Z a A)</option>
+            <option value="categoria">Categoria</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="barra-acoes">
+        <button type="button" class="botao" id="btn-limpar">Limpar filtros</button>
+        <div class="visualizacao" role="group" aria-label="Modo de visualização">
+          <button type="button" class="botao botao-visual" id="btn-grade" aria-pressed="true">Grade</button>
+          <button type="button" class="botao botao-visual" id="btn-lista" aria-pressed="false">Lista</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="aviso-erro" class="aviso-erro" role="alert" hidden></div>
+    <p id="contagem" class="contagem" aria-live="polite"></p>
+
+    <section id="resultados" class="resultados modo-grade" aria-label="Lista de itens"></section>
+    <p id="sem-resultados" class="sem-resultados" hidden>Nenhum item encontrado. Tente outros termos ou limpe os filtros.</p>
+
+  </main>
+
+  <footer class="rodape">
+    <p>ALIEN RPG — Banco de Itens · Projeto independente de consulta. Os dados do catálogo resumem informações do Livro Básico; consulte o livro para as regras completas.</p>
+    <p>ALIEN e ALIEN RPG pertencem a seus respectivos titulares. Este site não é oficial.</p>
+  </footer>
+
+  <!-- Janela de detalhes -->
+  <div class="modal" id="modal-detalhes" hidden>
+    <div class="modal-fundo" data-fechar></div>
+    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="detalhes-titulo">
+      <button type="button" class="modal-fechar" data-fechar aria-label="Fechar">&times;</button>
+      <div id="detalhes-corpo"></div>
+    </div>
+  </div>
+
+  <!-- Janela de cadastro -->
+  <div class="modal" id="modal-cadastro" hidden>
+    <div class="modal-fundo" data-fechar></div>
+    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="cadastro-titulo">
+      <button type="button" class="modal-fechar" data-fechar aria-label="Fechar">&times;</button>
+      <h2 id="cadastro-titulo" class="modal-titulo">Adicionar item personalizado</h2>
+      <form id="form-cadastro" novalidate>
+        <label class="campo">
+          <span>Nome *</span>
+          <input type="text" id="cad-nome" maxlength="120" required>
+        </label>
+        <label class="campo">
+          <span>Categoria</span>
+          <input type="text" id="cad-categoria" maxlength="60" list="lista-categorias" placeholder="Padrão: Personalizados">
+          <datalist id="lista-categorias"></datalist>
+        </label>
+        <label class="campo">
+          <span>Tipo</span>
+          <input type="text" id="cad-tipo" maxlength="60" list="lista-tipos">
+          <datalist id="lista-tipos"></datalist>
+        </label>
+        <label class="campo">
+          <span>Fabricante</span>
+          <input type="text" id="cad-fabricante" maxlength="80">
+        </label>
+        <label class="campo">
+          <span>Descrição</span>
+          <textarea id="cad-descricao" rows="4" maxlength="1500"></textarea>
+        </label>
+        <p class="erro-form" id="cad-erro" role="alert" hidden></p>
+        <div class="modal-botoes">
+          <button type="button" class="botao" data-fechar>Cancelar</button>
+          <button type="submit" class="botao botao-destaque">Salvar item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

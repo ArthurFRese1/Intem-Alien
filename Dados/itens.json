@@ -1,0 +1,1847 @@
+{
+  "versao": "1.0.0",
+  "descricao": "Itens de ALIEN RPG - Livro Básico, capítulo 6 (Equipamento). Descrições em resumo próprio.",
+  "itens": [
+    {
+      "id": "pistola-servico-m4a3",
+      "nome": "Pistola de Serviço M4A3",
+      "categoria": "Armas",
+      "tipo": "Pistola",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Pistola barata de 9 mm, arma padrão da ACEU. Serve como plano B para quando o plano A falha.",
+      "atributos": {
+        "Bônus": "+2",
+        "Dano": "1",
+        "Distância": "Média",
+        "Peso": "1/2",
+        "Custo": "$200"
+      },
+      "tags": [
+        "arma",
+        "pistola",
+        "aceu"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 118"
+    },
+    {
+      "id": "revolver-magnum-357",
+      "nome": "Revólver Magnum .357",
+      "categoria": "Armas",
+      "tipo": "Pistola",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Revólver clássico de grosso calibre, popular entre xerifes da Fronteira e criminosos.",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "2",
+        "Distância": "Média",
+        "Peso": "1",
+        "Custo": "$300"
+      },
+      "tags": [
+        "arma",
+        "revólver",
+        "pistola"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 118"
+    },
+    {
+      "id": "pistola-aev-rexim-rxf-m5",
+      "nome": "Pistola AEV Rexim RXF-M5",
+      "categoria": "Armas",
+      "tipo": "Pistola",
+      "raridade": "",
+      "fabricante": "Rexim",
+      "descricao": "Versão miniaturizada e armada de um soldador a laser Weyland-Yutani, improvisada como arma pelos rebeldes J'Har em 2106. Virou arma padrão de autodefesa na frota comercial da empresa.",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "1",
+        "Distância": "Média",
+        "Peso": "1/2",
+        "Custo": "$400",
+        "Especial": "Perfura armadura"
+      },
+      "tags": [
+        "arma",
+        "pistola",
+        "laser",
+        "weyland-yutani"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 118"
+    },
+    {
+      "id": "pistola-parafuso-watatsumi-dv-303",
+      "nome": "Pistola de Parafuso Watatsumi DV-303",
+      "categoria": "Armas",
+      "tipo": "Pistola",
+      "raridade": "",
+      "fabricante": "Watatsumi",
+      "descricao": "Ferramenta de construção que usa parafusos de expansão em reparos de casco e pode ser usada como arma improvisada. Precisa ser recarregada (ação lenta) após cada tiro.",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "3",
+        "Distância": "Curta",
+        "Peso": "1",
+        "Custo": "$400",
+        "Especial": "Perfura armadura, disparo único",
+        "Como ferramenta": "MAQUINÁRIO PESADO +2 em situações relevantes"
+      },
+      "tags": [
+        "arma",
+        "pistola",
+        "ferramenta",
+        "construção"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 118-119"
+    },
+    {
+      "id": "rifle-pulso-armat-m41a",
+      "nome": "Rifle de Pulso Armat M41A",
+      "categoria": "Armas",
+      "tipo": "Rifle",
+      "raridade": "",
+      "fabricante": "Armat",
+      "descricao": "Arma padrão da ACEU: fuzil automático de 10 mm combinado a um lançador de granadas de 30 mm. Pode emperrar quando totalmente carregado, por isso se recomendam pentes parcialmente cheios.",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "2",
+        "Distância": "Longa",
+        "Peso": "1",
+        "Custo": "$800",
+        "Especial": "Perfura armadura, automática"
+      },
+      "tags": [
+        "arma",
+        "rifle",
+        "aceu",
+        "fuzileiros",
+        "automática"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 120-122",
+      "observacao": "A ilustração do livro (p. 122) indica Custo $1,200 e cita o lançador de granadas como comentário. Os valores acima seguem a tabela da p. 120."
+    },
+    {
+      "id": "fuzil-pulso-ak-4047",
+      "nome": "Fuzil de Pulso AK-4047",
+      "categoria": "Armas",
+      "tipo": "Rifle",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Equivalente da UPP ao M41A: mais barato e muito mais robusto, embora menos preciso.",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "2",
+        "Distância": "Longa",
+        "Peso": "1",
+        "Custo": "$500",
+        "Especial": "Automática"
+      },
+      "tags": [
+        "arma",
+        "rifle",
+        "upp",
+        "automática"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 120-121"
+    },
+    {
+      "id": "rifle-precisao-armat-m42a",
+      "nome": "Rifle de Precisão Armat M42A",
+      "categoria": "Armas",
+      "tipo": "Rifle",
+      "raridade": "",
+      "fabricante": "Armat",
+      "descricao": "Rifle de precisão semiautomático de pulso eletrônico da ACEU, com bipé dobrável, quebra-chamas e coronha ajustável.",
+      "atributos": {
+        "Bônus": "+2",
+        "Dano": "2",
+        "Distância": "Extrema",
+        "Peso": "1",
+        "Custo": "$1,000",
+        "Especial": "Perfura armadura"
+      },
+      "tags": [
+        "arma",
+        "rifle",
+        "precisão",
+        "aceu"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 120-122",
+      "observacao": "A ilustração do livro (p. 122) indica Bônus +1 e Dano 3. Os valores acima seguem a tabela da p. 120."
+    },
+    {
+      "id": "armat-modelo-37a2-calibre-12",
+      "nome": "Armat Modelo 37A2 Calibre 12 Ação de Bomba",
+      "categoria": "Armas",
+      "tipo": "Rifle",
+      "raridade": "",
+      "fabricante": "Armat",
+      "descricao": "Espingarda de ação de bomba, confiável e direta, opcional na ACEU. Indicada para encontros próximos.",
+      "atributos": {
+        "Bônus": "+2",
+        "Dano": "3",
+        "Distância": "Curta",
+        "Peso": "1",
+        "Custo": "$500",
+        "Especial": "Armadura dobrada"
+      },
+      "tags": [
+        "arma",
+        "espingarda",
+        "calibre 12"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 120-122"
+    },
+    {
+      "id": "pistola-arpao-spacesub-asso-400",
+      "nome": "Pistola de Arpão SpaceSub ASSO-400",
+      "categoria": "Armas",
+      "tipo": "Rifle",
+      "raridade": "",
+      "fabricante": "SpaceSub",
+      "descricao": "Projetada para manobras manuais de emergência: dispara um arpão com gancho preso a um tirante, usado para aproximar objetos flutuantes e pessoas no espaço.",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "1",
+        "Distância": "Média",
+        "Peso": "1",
+        "Custo": "$300",
+        "Especial": "Armadura dobrada, disparo único"
+      },
+      "tags": [
+        "arma",
+        "arpão",
+        "espaço",
+        "emergência"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 120-123"
+    },
+    {
+      "id": "rifle-pulso-plasma-fase-armat-xm99a",
+      "nome": "Rifle de Pulso de Plasma de Fase Armat XM99A",
+      "categoria": "Armas",
+      "tipo": "Rifle",
+      "raridade": "",
+      "fabricante": "Armat",
+      "descricao": "Protótipo testado pela ACEU, capaz de matar a maioria das criaturas com um único tiro. Tem atraso de carga ao disparar e deve ser mirado com cuidado (ação rápida). Exige rolagem de Abastecimento de Energia após cada disparo.",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "4",
+        "Distância": "Extrema",
+        "Peso": "2",
+        "Custo": "$20,000",
+        "Especial": "Perfura armadura, Abastecimento de Energia 5"
+      },
+      "tags": [
+        "arma",
+        "plasma",
+        "protótipo",
+        "aceu"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 120-123"
+    },
+    {
+      "id": "lancador-granadas-armat-u1",
+      "nome": "Lançador de Granadas Armat U1",
+      "categoria": "Armas",
+      "tipo": "Arma Pesada",
+      "raridade": "",
+      "fabricante": "Armat",
+      "descricao": "Lançador de granadas de 30 mm, ação de bomba, normalmente parte do M41A, mas existe avulso. A carga padrão é a granada de fragmentação M40; aceita também fumaça, atordoamento e Eletrochoque G2.",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "Explosão 9",
+        "Distância": "Longa",
+        "Peso": "1/2",
+        "Custo": "$600",
+        "Especial": "Pode disparar outros tipos de granadas"
+      },
+      "tags": [
+        "arma",
+        "granada",
+        "explosivo",
+        "aceu"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124-125"
+    },
+    {
+      "id": "rifle-pulso-pesado-armat-m41ae2",
+      "nome": "Rifle de Pulso Pesado Armat M41AE2",
+      "categoria": "Armas",
+      "tipo": "Arma Pesada",
+      "raridade": "",
+      "fabricante": "Armat",
+      "descricao": "Variante de suporte do M41A, com cano mais longo no lugar do lançador de granadas. Metralhadora para cobrir uma evacuação.",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "3",
+        "Distância": "Extrema",
+        "Peso": "2",
+        "Custo": "$1,500",
+        "Especial": "Perfura armadura, automática"
+      },
+      "tags": [
+        "arma",
+        "rifle",
+        "automática",
+        "aceu"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124-125",
+      "observacao": "A ilustração do livro (p. 124) indica Bônus +2, Dano 2 e Custo $1,200. Os valores acima seguem a tabela da p. 124."
+    },
+    {
+      "id": "smart-gun-m56a2",
+      "nome": "Smart Gun M56A2",
+      "categoria": "Armas",
+      "tipo": "Arma Pesada",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Poder de fogo pesado dos esquadrões da ACEU, montada em braço articulado e arreio blindado. Um sistema infravermelho detecta ameaças e as envia ao Visor Montado na Cabeça; a escolha dos alvos continua com o operador.",
+      "atributos": {
+        "Bônus": "+3",
+        "Dano": "3",
+        "Distância": "Longa",
+        "Peso": "3",
+        "Custo": "$6,000",
+        "Especial": "Perfura armadura, automática"
+      },
+      "tags": [
+        "arma",
+        "smart gun",
+        "aceu",
+        "automática"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124-125"
+    },
+    {
+      "id": "unidade-incineradora-m240",
+      "nome": "Unidade Incineradora M240",
+      "categoria": "Armas",
+      "tipo": "Arma Pesada",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Lança-chamas tipo carabina que usa cartuchos de nafta. Usado pela ACEU em nível de esquadrão; apelidado de \"Assador\". Alvos atingidos pegam fogo (Intensidade 9).",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "2",
+        "Distância": "Média",
+        "Peso": "1",
+        "Custo": "$500",
+        "Especial": "Fogo Intensidade 9"
+      },
+      "tags": [
+        "arma",
+        "fogo",
+        "lança-chamas",
+        "aceu"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124-125"
+    },
+    {
+      "id": "arma-sentinela-ua-571-c",
+      "nome": "Arma Sentinela UA 571-C",
+      "categoria": "Armas",
+      "tipo": "Arma Pesada",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Sentinela robótica em tripé, parte de um sistema automatizado de defesa de perímetro. Rastreia e atira em alvos em movimento dentro do alcance e usa um Canhão Automático M30. Pode ser operada remotamente com um Visor Montado na Cabeça.",
+      "atributos": {
+        "Bônus": "+2",
+        "Dano": "4",
+        "Distância": "Extrema",
+        "Peso": "–",
+        "Custo": "$12,000",
+        "Especial": "Perfura armadura, automática, COMBATE À DISTÂNCIA 8"
+      },
+      "tags": [
+        "arma",
+        "sentinela",
+        "automática",
+        "defesa"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124-125"
+    },
+    {
+      "id": "granada-eletrochoque-g2",
+      "nome": "Granada de Eletrochoque G2",
+      "categoria": "Armas",
+      "tipo": "Arma Pesada",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Granada que se move cerca de um metro acima do solo antes de liberar um pulso elétrico não letal de alta tensão. Útil no controle de multidões. *Distância Média quando usada como granada de mão.",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "Atordoamento",
+        "Distância": "Média*",
+        "Peso": "1/2",
+        "Custo": "$400",
+        "Especial": "Efeito de atordoamento (–2)"
+      },
+      "tags": [
+        "arma",
+        "granada",
+        "atordoamento",
+        "não letal"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124-125"
+    },
+    {
+      "id": "municao-recarga",
+      "nome": "Munição (recarga completa)",
+      "categoria": "Armas",
+      "tipo": "Munição",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Uma recarga completa de uma arma de fogo custa normalmente cerca de 5% do custo da própria arma.",
+      "atributos": {
+        "Custo": "cerca de 5% do custo da arma"
+      },
+      "tags": [
+        "munição",
+        "recarga"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 124"
+    },
+    {
+      "id": "municao-ponta-u-238",
+      "nome": "Munição de Ponta de U-238 (Balas Sujas)",
+      "categoria": "Armas",
+      "tipo": "Munição",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Munição tratada com radionuclídeos; custa quatro vezes o valor da munição normal. O alvo sofre dano perfurante e é irradiado, e o Valor de Armadura dele é reduzido em dois após os efeitos de Perfuradora de Armadura ou Armadura Dobrada. Carregar a arma também irradia o portador.",
+      "atributos": {
+        "Custo": "4x o valor da munição normal",
+        "Radiação": "1 Rad ao alvo; 1 Rad por Período para quem carrega"
+      },
+      "tags": [
+        "munição",
+        "radiação",
+        "balas sujas"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 123"
+    },
+    {
+      "id": "instrumento-sem-corte",
+      "nome": "Instrumento sem Corte",
+      "categoria": "Armas",
+      "tipo": "Corpo a Corpo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "1",
+        "Distância": "Engajada",
+        "Peso": "1",
+        "Custo": "–"
+      },
+      "tags": [
+        "arma",
+        "corpo a corpo",
+        "improvisada"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 126"
+    },
+    {
+      "id": "faca",
+      "nome": "Faca",
+      "categoria": "Armas",
+      "tipo": "Corpo a Corpo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "2",
+        "Distância": "Engajada",
+        "Peso": "1/2",
+        "Custo": "$50"
+      },
+      "tags": [
+        "arma",
+        "corpo a corpo",
+        "lâmina"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 126"
+    },
+    {
+      "id": "bastao-choque",
+      "nome": "Bastão de Choque",
+      "categoria": "Armas",
+      "tipo": "Corpo a Corpo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Dispositivo de choque elétrico para lidar com gado e pragas na Fronteira. Quem sofrer ao menos 1 ponto de dano faz teste de RESISTÊNCIA imediato ou fica atordoado por uma rodada. Exige rolagem de Abastecimento de Energia após cada ataque.",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "1",
+        "Distância": "Engajada",
+        "Peso": "1/2",
+        "Custo": "$80",
+        "Especial": "Efeito de atordoamento, Abastecimento de Energia 5"
+      },
+      "tags": [
+        "arma",
+        "elétrico",
+        "atordoamento"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 126-127"
+    },
+    {
+      "id": "macarico-mecanico-corte",
+      "nome": "Maçarico Mecânico de Corte",
+      "categoria": "Armas",
+      "tipo": "Corpo a Corpo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Maçarico utilitário para soldar e cortar metais, que pode servir de arma em situação crítica. Exige rolagem de Abastecimento de Energia após cada uso.",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "3",
+        "Distância": "Engajada",
+        "Peso": "1",
+        "Custo": "$300",
+        "Especial": "Perfura armadura, Abastecimento de Energia 5",
+        "Como ferramenta": "MAQUINÁRIO PESADO +2 em situações relevantes"
+      },
+      "tags": [
+        "arma",
+        "ferramenta",
+        "corte",
+        "improvisada"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 126-127"
+    },
+    {
+      "id": "metralhadora-20mm",
+      "nome": "Metralhadora de 20mm",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "+3",
+        "Dano": "3",
+        "Distância": "Longa",
+        "Custo": "$7,500",
+        "Especial": "Perfura armadura, automática"
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "metralhadora"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "metralhadora-25mm",
+      "nome": "Metralhadora de 25mm",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "+3",
+        "Dano": "3",
+        "Distância": "Extrema",
+        "Custo": "$9,000",
+        "Especial": "Perfura armadura, automática"
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "metralhadora"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "torre-canhao-pulso-plasma-fase",
+      "nome": "Torre de Canhão de Pulso de Plasma de Fase",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "+1",
+        "Dano": "6",
+        "Distância": "Extrema",
+        "Custo": "$54,000",
+        "Especial": "Perfura armadura"
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "torre",
+        "plasma"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "unidade-chamas-multidirecional",
+      "nome": "Unidade de Chamas Multidirecional",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "4",
+        "Distância": "Média",
+        "Custo": "$4,200",
+        "Especial": "Fogo Intensidade 9"
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "fogo"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "lancador-foguetes-mk16-banshee-70",
+      "nome": "Lançador de Foguetes Mk16 Não-guiados Banshee 70 de 150 mm",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "–",
+        "Dano": "3",
+        "Distância": "Longa",
+        "Custo": "$48,000",
+        "Especial": "Causa explosão de Poder de Fogo 12 além dos danos diretos. Automática."
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "foguete",
+        "explosivo"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "lancador-misseis-agm-220c-cerbero-ii",
+      "nome": "Lançador de Mísseis Táticos AGM-220C Cérbero II",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "+2",
+        "Dano": "7",
+        "Distância": "Extrema",
+        "Custo": "$76,000",
+        "Especial": "Só atinge veículos e edifícios terrestres. Perfura armadura. Custo dos mísseis: $12.000."
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "míssil"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "lancador-misseis-mata-leao-mia-90e",
+      "nome": "Lançador de Mísseis para Aeronaves Mata-leão MIA-90E",
+      "categoria": "Armas",
+      "tipo": "Arma de Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Bônus": "+3",
+        "Dano": "5",
+        "Distância": "Extrema",
+        "Custo": "$64,000",
+        "Especial": "Só atinge veículos aéreos. Perfura armadura. Custo do míssil: $9.000."
+      },
+      "tags": [
+        "arma",
+        "veículo",
+        "míssil",
+        "antiaéreo"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 147"
+    },
+    {
+      "id": "armadura-pessoal-m3",
+      "nome": "Armadura de Pessoal M3",
+      "categoria": "Proteção",
+      "tipo": "Armadura",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Padrão da ACEU: colete rígido acolchoado, proteção balística flexível no abdômen e grevas até os joelhos. Inclui comunicação interna, Transmissor de Dados Pessoais e pontos que monitoram os sinais vitais.",
+      "atributos": {
+        "Valor de Armadura": "6",
+        "Abastecimento de Ar": "–",
+        "Peso": "1",
+        "Custo": "$1,200",
+        "Especial": "Unidade de comunicação integrada"
+      },
+      "tags": [
+        "armadura",
+        "aceu",
+        "colete"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 127-128"
+    },
+    {
+      "id": "traje-compressao-irc-mk50",
+      "nome": "Traje de Compressão IRC Mk. 50",
+      "categoria": "Proteção",
+      "tipo": "Traje",
+      "raridade": "",
+      "fabricante": "IRC",
+      "descricao": "Traje confiável e ainda comum na Fronteira. O capacete tem comunicação, monitor de aviso, luz lateral e câmera sem fio, e o traje mantém a pressão do usuário no vácuo.",
+      "atributos": {
+        "Valor de Armadura": "2",
+        "Abastecimento de Ar": "5",
+        "Peso": "1",
+        "Custo": "$15,000",
+        "Especial": "AGILIDADE –1, Abastecimento de Ar 5"
+      },
+      "tags": [
+        "armadura",
+        "vácuo",
+        "traje"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 127-128"
+    },
+    {
+      "id": "traje-pressao-irc-mk35",
+      "nome": "Traje de Pressão IRC Mk. 35",
+      "categoria": "Proteção",
+      "tipo": "Traje",
+      "raridade": "",
+      "fabricante": "IRC",
+      "descricao": "Traje de pressão de combate padrão da ACEU. Protege totalmente do vácuo, mas é volumoso e as juntas rígidas tendem a emperrar; exige tempo em câmara de descompressão após o uso.",
+      "atributos": {
+        "Valor de Armadura": "5",
+        "Abastecimento de Ar": "4",
+        "Peso": "2",
+        "Custo": "$2,000",
+        "Especial": "Abastecimento de Ar 4. Item pesado."
+      },
+      "tags": [
+        "armadura",
+        "vácuo",
+        "aceu",
+        "traje"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 127-128"
+    },
+    {
+      "id": "traje-sobrevivencia-eco-multiplaneta",
+      "nome": "Traje de Sobrevivência Eco Multiplaneta",
+      "categoria": "Proteção",
+      "tipo": "Traje",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Traje de AEV com juntas articuladas e dedos de atuação automática, que dá mobilidade limitada e máxima proteção contra os riscos do espaço. Tem propulsores para manobras sem corda em gravidade zero; a comunicação não é blindada.",
+      "atributos": {
+        "Valor de Armadura": "4",
+        "Abastecimento de Ar": "6",
+        "Peso": "2",
+        "Custo": "$30,000",
+        "Especial": "Item pesado."
+      },
+      "tags": [
+        "armadura",
+        "vácuo",
+        "aev",
+        "traje"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 127-128"
+    },
+    {
+      "id": "traje-amu-weyland-yutani",
+      "nome": "Weyland-Yutani Traje AMU",
+      "categoria": "Proteção",
+      "tipo": "Traje",
+      "raridade": "",
+      "fabricante": "Weyland-Yutani",
+      "descricao": "Traje ambiental multiuso, de compressão blindado, para combate e controle de animais em condições adversas. Oferece ar filtrado, armadura limitada e resistência a temperaturas extremas, mas não protege do vácuo.",
+      "atributos": {
+        "Valor de Armadura": "3",
+        "Abastecimento de Ar": "4",
+        "Peso": "1",
+        "Custo": "$5,000",
+        "Especial": "SOBREVIVÊNCIA +3"
+      },
+      "tags": [
+        "armadura",
+        "ambiental",
+        "traje"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 127-128"
+    },
+    {
+      "id": "exo-empilhadeira-p-5000",
+      "nome": "Exo-Empilhadeira Mecânica Caterpillar P-5000",
+      "categoria": "Proteção",
+      "tipo": "Exoesqueleto",
+      "raridade": "",
+      "fabricante": "Caterpillar",
+      "descricao": "Exoesqueleto mecanizado de carga, soldagem e reparos que multiplica a força do operador por dez, com garras hidráulicas. Dano base 3 em ataques corpo a corpo; requer nível de habilidade 2 ou mais em MAQUINÁRIO PESADO.",
+      "atributos": {
+        "Valor de Armadura": "3",
+        "Abastecimento de Ar": "–",
+        "Peso": "–",
+        "Custo": "$50,000",
+        "Especial": "MAQUINÁRIO PESADO e COMBATE CORPO A CORPO +3"
+      },
+      "tags": [
+        "armadura",
+        "exoesqueleto",
+        "carga"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 127-128"
+    },
+    {
+      "id": "apollo",
+      "nome": "A.P.O.L.L.O.",
+      "categoria": "Tecnologia",
+      "tipo": "Computador Central",
+      "raridade": "",
+      "fabricante": "Seegson",
+      "descricao": "Resposta da Seegson ao MU/TH/UR, criado para coordenar os sintéticos Funcionário Joe da Seegson na operação de uma nave. Menos avançado que os modelos MU/TH/UR.",
+      "atributos": {
+        "Habilidades": "Tecnologia 5, Pilotagem 4, Observação 5",
+        "Custo": "$2,000,000"
+      },
+      "tags": [
+        "computador",
+        "ia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 130"
+    },
+    {
+      "id": "muthur-6000",
+      "nome": "MU/TH/UR 6000",
+      "categoria": "Tecnologia",
+      "tipo": "Computador Central",
+      "raridade": "",
+      "fabricante": "Weyland",
+      "descricao": "Modelo da série MU/TH/UR, sistema de computador usado em naves, estações e instalações militares e apelidado de \"Mãe\".",
+      "atributos": {
+        "Habilidades": "Tecnologia 5, Pilotagem 5, Observação 5",
+        "Custo": "$2,500,000"
+      },
+      "tags": [
+        "computador",
+        "ia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 130"
+    },
+    {
+      "id": "muthur-6500",
+      "nome": "MU/TH/UR 6500",
+      "categoria": "Tecnologia",
+      "tipo": "Computador Central",
+      "raridade": "",
+      "fabricante": "Weyland",
+      "descricao": "Modelo da série MU/TH/UR.",
+      "atributos": {
+        "Habilidades": "Tecnologia 6, Pilotagem 5, Observação 6",
+        "Custo": "$3,500,000"
+      },
+      "tags": [
+        "computador",
+        "ia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 130"
+    },
+    {
+      "id": "muthur-7000",
+      "nome": "MU/TH/UR 7000",
+      "categoria": "Tecnologia",
+      "tipo": "Computador Central",
+      "raridade": "",
+      "fabricante": "Weyland",
+      "descricao": "Modelo da série MU/TH/UR.",
+      "atributos": {
+        "Habilidades": "Tecnologia 7, Pilotagem 6, Observação 7",
+        "Custo": "$5,000,000"
+      },
+      "tags": [
+        "computador",
+        "ia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 130"
+    },
+    {
+      "id": "muthur-9000",
+      "nome": "MU/TH/UR 9000",
+      "categoria": "Tecnologia",
+      "tipo": "Computador Central",
+      "raridade": "",
+      "fabricante": "Weyland",
+      "descricao": "Modelo sofisticado e interativo da série MU/TH/UR, que com o tempo pode desenvolver personalidade rudimentar.",
+      "atributos": {
+        "Habilidades": "Tecnologia 10, Pilotagem 8, Observação 10, Combate à Distância 9",
+        "Custo": "$50,000,000"
+      },
+      "tags": [
+        "computador",
+        "ia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 130"
+    },
+    {
+      "id": "disco-long-data",
+      "nome": "Disco de Long-Data",
+      "categoria": "Tecnologia",
+      "tipo": "Armazenamento de Dados",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Disco de memória nano-óptico usado para backups físicos de registros corporativos e de colônias, a salvo de pulsos eletromagnéticos.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$30",
+        "Efeito": "Armazena até 10 zettabytes (ZB) de dados"
+      },
+      "tags": [
+        "dados"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131"
+    },
+    {
+      "id": "fita-magnetica",
+      "nome": "Fita Magnética",
+      "categoria": "Tecnologia",
+      "tipo": "Armazenamento de Dados",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Tecnologia antiga, barata e descartável. Vulnerável a um forte pulso magnético, mas não emite sinais facilmente detectáveis pelas grades de sensores de segurança.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$5",
+        "Efeito": "Armazena até 120 terabytes (TB) de dados"
+      },
+      "tags": [
+        "dados"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131"
+    },
+    {
+      "id": "terminal-computador",
+      "nome": "Terminal de Computador",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Qualquer hardware eletrônico de colônia, nave ou estação que acesse e processe dados por teclado, voz, monitor ou holograma.",
+      "atributos": {
+        "Peso": "–",
+        "Custo": "Varia",
+        "Efeito": "Acessa e processa dados (rolagem de TECNOLOGIA)"
+      },
+      "tags": [
+        "computador"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "ts-prp",
+      "nome": "TS-PRP Terminal por Satélite",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Terminal portátil blindado e resistente à água, com joystick de pilotagem, usado para pilotar remotamente uma nave em órbita via torre de satélite.",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$9,000",
+        "Efeito": "Nave espacial de controle remoto (rolagem de TECNOLOGIA)"
+      },
+      "tags": [
+        "pilotagem",
+        "satélite"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "gravador-fita-magnetica-seegson-serie-c",
+      "nome": "Gravador de Fita Magnética Seegson Série C",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "Seegson",
+      "descricao": "Gravador de áudio portátil de tecnologia antiga, usado para gravar ou tocar música e áudio.",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$50–$100",
+        "Efeito": "Grava e toca música (MANIPULAÇÃO +1)"
+      },
+      "tags": [
+        "música",
+        "áudio"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "relogio-samani-serie-e",
+      "nome": "Relógio Samani Série E",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "Samani",
+      "descricao": "Relógio de pulso de precisão que acompanha a hora de dois locais coloniais. O modelo E-550 inclui sensores de oxigênio e pressão que avisam sobre brechas no casco.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$50",
+        "Efeito": "Registra a hora e os níveis de oxigênio e pressão (SOBREVIVÊNCIA +1)"
+      },
+      "tags": [
+        "relógio"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "transmissor-dados-pessoais",
+      "nome": "Transmissor de Dados Pessoais",
+      "categoria": "Comunicação",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Transmite a localização de quem o usa; alguns modelos monitoram sinais vitais. Pode ser implantado cirurgicamente, embutido em traje ou usado como acessório.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$100",
+        "Efeito": "Monitora a localização e os sinais vitais"
+      },
+      "tags": [
+        "tdp",
+        "rastreamento"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "receptor-transmissor-iai",
+      "nome": "Receptor-Transmissor IAI",
+      "categoria": "Comunicação",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "IAI",
+      "descricao": "Farol pessoal que evita que sentinelas automáticas ataquem aliados por engano. Normalmente é implantado cirurgicamente.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$250",
+        "Efeito": "Impede fogo amigo vindo da Arma Sentinela"
+      },
+      "tags": [
+        "sentinela",
+        "identificação"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "cartoes-transmissores-dados",
+      "nome": "Cartões Transmissores de Dados",
+      "categoria": "Comunicação",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Pequenas placas de plástico transparente que se ligam a equipamentos de gravação, como os do capacete de um traje espacial, e transmitem os dados sem fio ao terminal sincronizado.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$50",
+        "Efeito": "Transferência de dados audiovisuais"
+      },
+      "tags": [
+        "dados",
+        "gravação"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "seegson-dad-p",
+      "nome": "Seegson DAD-P",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "Seegson",
+      "descricao": "Tablet de dados pessoais que pode ser sincronizado com TDPs, câmeras de capacete e outros dispositivos para coordenar uma equipe em movimento.",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$500",
+        "Efeito": "Coordena informações para equipes de campo"
+      },
+      "tags": [
+        "tablet",
+        "equipe"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "dispositivo-diagnostico-seegson",
+      "nome": "Dispositivo de Diagnóstico de Sistema Seegson",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "Seegson",
+      "descricao": "Usado para diagnosticar e solucionar problemas de computadores e sistemas mecânicos de estações e naves (DDSS).",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$300",
+        "Efeito": "Diagnostica e soluciona problemas de sistemas de computadores (TECNOLOGIA +2)"
+      },
+      "tags": [
+        "diagnóstico",
+        "hackear"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "holovis",
+      "nome": "HoloVis",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Plataforma estratégica e de análise que gera um holograma tridimensional a partir de dados digitalizados, ao vivo ou gravados (Mesa de Visor Holográfico).",
+      "atributos": {
+        "Peso": "–",
+        "Custo": "$100,000",
+        "Efeito": "Plataforma de análise estratégica (COMANDO +2)"
+      },
+      "tags": [
+        "holograma",
+        "estratégia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132",
+      "observacao": "A tabela indica COMANDO +2; o texto do item cita COMANDO e OBSERVAÇÃO +2."
+    },
+    {
+      "id": "dispositivo-computacional-modular",
+      "nome": "Dispositivo Computacional Modular",
+      "categoria": "Tecnologia",
+      "tipo": "Dispositivo",
+      "raridade": "",
+      "fabricante": "Weyland",
+      "descricao": "Projetor holográfico audiovisual de alta qualidade (DCM), cujos hologramas imersivos podem preencher uma área de 6x6 m.",
+      "atributos": {
+        "Peso": "–",
+        "Custo": "$8,000",
+        "Efeito": "Projetor holográfico audiovisual completo"
+      },
+      "tags": [
+        "holograma",
+        "projetor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 131-132"
+    },
+    {
+      "id": "mira-optica",
+      "nome": "Mira Óptica",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$60",
+        "Efeito": "Distância aumenta uma categoria"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "lanterna-feixe-intenso",
+      "nome": "Lanterna de Feixe Intenso",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$45",
+        "Efeito": "Remove o efeito de escuridão em uma zona"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "binoculos",
+      "nome": "Binóculos",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$100",
+        "Efeito": "Bônus +2 em OBSERVAÇÃO"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "rastreador-movimento-m314",
+      "nome": "Rastreador de Movimento M314",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$1,200",
+        "Efeito": "Veja a página 86. Distância LONGA em ambientes internos."
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "rastreador-movimento-m316",
+      "nome": "Rastreador de Movimento M316",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$3,000",
+        "Efeito": "Veja a página 86. Distância MÉDIA em ambientes internos."
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "visor-montado-cabeca",
+      "nome": "Visor Montado na Cabeça",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$200",
+        "Efeito": "Controle remoto da Arma Sentinela"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "neuro-visor",
+      "nome": "Neuro Visor",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$10,000",
+        "Efeito": "Monitora o paciente em hipersono"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "dispositivo-mapeamento-pets",
+      "nome": "Dispositivo de Mapeamento \"PETS\"",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$50,000 cada",
+        "Efeito": "Escaneia uma zona por Rodada"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "seegson-microvisor-2000se",
+      "nome": "Seegson Microvisor-2000SE",
+      "categoria": "Sensores e Visão",
+      "tipo": "Dispositivo de Visão",
+      "raridade": "",
+      "fabricante": "Seegson",
+      "descricao": "",
+      "atributos": {
+        "Peso": "–",
+        "Custo": "$25,000 por deck",
+        "Efeito": "Acompanhamento de Localização"
+      },
+      "tags": [
+        "visão",
+        "sensor"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 133"
+    },
+    {
+      "id": "ferramenta-multiuso",
+      "nome": "Ferramenta Multiuso",
+      "categoria": "Ferramentas",
+      "tipo": "Ferramenta",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Ferramenta comum usada para abrir câmaras de ar sem energia e desviar energia de ou para caixas de junção elétrica.",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$150",
+        "Efeito": "MAQUINÁRIO PESADO +1"
+      },
+      "tags": [
+        "ferramenta"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 134-135"
+    },
+    {
+      "id": "ferramentas-eletronicas",
+      "nome": "Ferramentas Eletrônicas",
+      "categoria": "Ferramentas",
+      "tipo": "Ferramenta",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$250",
+        "Efeito": "TECNOLOGIA +1"
+      },
+      "tags": [
+        "ferramenta",
+        "eletrônica"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 134"
+    },
+    {
+      "id": "kit-primeiros-socorros-pessoal",
+      "nome": "Kit de Primeiros Socorros Pessoal",
+      "categoria": "Medicina",
+      "tipo": "Produto Médico",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Contém o necessário para estancar sangramento, desinfetar e cauterizar uma ferida, além de bandagens e um estimulante. É uma solução temporária, de uso único.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$50",
+        "Efeito": "AJUDA MÉDICA +2"
+      },
+      "tags": [
+        "médico",
+        "primeiros socorros"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 135-136"
+    },
+    {
+      "id": "kit-cirurgico",
+      "nome": "Kit Cirúrgico",
+      "categoria": "Medicina",
+      "tipo": "Produto Médico",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Instrumentos cirúrgicos que podem salvar vidas, mas servem também como armas de corte em situação crítica. Dano base 2 quando usado como arma.",
+      "atributos": {
+        "Peso": "1/2",
+        "Custo": "$25-$200",
+        "Efeito": "AJUDA MÉDICA +1 para evitar a morte"
+      },
+      "tags": [
+        "médico",
+        "cirurgia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 135-136"
+    },
+    {
+      "id": "capsula-medica-pauling",
+      "nome": "Cápsula Médica Pauling",
+      "categoria": "Medicina",
+      "tipo": "Produto Médico",
+      "raridade": "",
+      "fabricante": "Pauling",
+      "descricao": "Scanner médico autônomo e unidade cirúrgica capaz de diagnosticar, tratar infecções e realizar até cirurgia de ponte de safena. Pode ser programada com um teste simples (+2) de TECNOLOGIA; não permite forçar rolagens.",
+      "atributos": {
+        "Custo": "$2,000,000",
+        "Efeito": "AJUDA MÉDICA 10"
+      },
+      "tags": [
+        "médico",
+        "cirurgia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 135-136"
+    },
+    {
+      "id": "automed",
+      "nome": "AutoMed",
+      "categoria": "Medicina",
+      "tipo": "Produto Médico",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Dispositivo automatizado de tratamento, a versão modesta da Cápsula Pauling. Diagnostica e trata ferimentos e infecções menores e alinha ossos quebrados, mas não faz cirurgias complexas. Programação com teste de TECNOLOGIA sem modificador; não permite forçar rolagens.",
+      "atributos": {
+        "Custo": "$500,000",
+        "Efeito": "AJUDA MÉDICA 6"
+      },
+      "tags": [
+        "médico",
+        "automático"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 135-136"
+    },
+    {
+      "id": "comprimidos-rebite",
+      "nome": "Comprimidos de Rebite",
+      "categoria": "Medicina",
+      "tipo": "Fármaco",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Suplemento de ação rápida que elimina a necessidade de dormir por um dia. O uso excessivo pode causar derrame ou ataque cardíaco; durante esse dia o estresse não pode ser reduzido.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$2",
+        "Efeito": "NÍVEL DE ESTRESSE +1 por dose"
+      },
+      "tags": [
+        "fármaco",
+        "estimulante"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 136-137"
+    },
+    {
+      "id": "hidrata1",
+      "nome": "Hidrataçã1",
+      "categoria": "Medicina",
+      "tipo": "Fármaco",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Solução eletrolítica que neutraliza os efeitos desidratantes do hipersono; um dos poucos fármacos da era espacial sem efeitos colaterais.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$5",
+        "Efeito": "Remove a Desidratação causada pelo hipersono"
+      },
+      "tags": [
+        "fármaco",
+        "hipersono"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 136-137"
+    },
+    {
+      "id": "naproleve",
+      "nome": "Naproleve",
+      "categoria": "Medicina",
+      "tipo": "Fármaco",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Analgésico instantâneo injetável. Uma overdose pode ter efeito intoxicante: cada dose além da primeira no mesmo Período dá –1 em testes baseados em AGILIDADE até o fim do turno.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$20",
+        "Efeito": "Reduz o NÍVEL DE ESTRESSE a zero"
+      },
+      "tags": [
+        "fármaco",
+        "analgésico"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 136-137"
+    },
+    {
+      "id": "drogas-recreativas",
+      "nome": "Drogas Recreativas",
+      "categoria": "Medicina",
+      "tipo": "Fármaco",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Drogas legais prescritas para uso recreativo por médicos corporativos, como cannabis, tabaco e certas doses de esteroides e benzodiazepínicos. O preço varia de $5 (um maço de cigarros) a $60.000 (um quilo de benzoilecgonina).",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "Varia",
+        "Efeito": "Varia"
+      },
+      "tags": [
+        "droga",
+        "recreativa"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 136-137"
+    },
+    {
+      "id": "drogas-x",
+      "nome": "Drogas-X",
+      "categoria": "Medicina",
+      "tipo": "Fármaco",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Drogas extremas que a maioria das corporações éticas tenta manter longe das colônias. Aumentam força, resistência e sentidos, mas o uso prolongado pode causar alucinações, convulsões, psicose e derrame.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "Varia",
+        "Efeito": "Varia"
+      },
+      "tags": [
+        "droga",
+        "estimulante"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 136-137"
+    },
+    {
+      "id": "refeicao-pre-pronta",
+      "nome": "Refeição Pré-Pronta",
+      "categoria": "Suprimentos",
+      "tipo": "Comida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Ração congelada pré-preparada, a refeição típica no espaço. As empresas fazem os funcionários pagarem por elas.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$10",
+        "Efeito": "Abastecimento de Comida +1"
+      },
+      "tags": [
+        "comida",
+        "ração"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "garrafa-agua",
+      "nome": "Garrafa de Água",
+      "categoria": "Suprimentos",
+      "tipo": "Bebida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "A água fornecida pela empresa a bordo ($2) é racionada e reciclada. Água purificada ($10) é item de luxo em alguns mundos e pode chegar a $100 por garrafa em um planeta desértico.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$2–$100",
+        "Efeito": "Abastecimento de Água +1"
+      },
+      "tags": [
+        "água",
+        "bebida"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "suco-inseto",
+      "nome": "\"Suco de Inseto\"",
+      "categoria": "Suprimentos",
+      "tipo": "Bebida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Bebida proteica e calórica feita de insetos criados em fazendas, uma forma barata de se manter vivo na Fronteira.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$5",
+        "Efeito": "Abastecimento de Água e Comida +1"
+      },
+      "tags": [
+        "bebida",
+        "proteína"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "bebida-carbonada",
+      "nome": "Bebida Carbonada",
+      "categoria": "Suprimentos",
+      "tipo": "Bebida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Refrigerante, item de luxo na Fronteira.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$2",
+        "Efeito": "Abastecimento de Água +1"
+      },
+      "tags": [
+        "refrigerante",
+        "bebida"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "barra-chocolate",
+      "nome": "Barra de Chocolate",
+      "categoria": "Suprimentos",
+      "tipo": "Comida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Item de luxo na Fronteira.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$2–$5",
+        "Efeito": "Abastecimento de Comida +1"
+      },
+      "tags": [
+        "chocolate",
+        "doce"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "cafe",
+      "nome": "Café",
+      "categoria": "Suprimentos",
+      "tipo": "Bebida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Servido de graça na maioria das naves e estações da companhia. Adia temporariamente os inconvenientes da falta de sono em um Período.",
+      "atributos": {
+        "Peso": "0",
+        "Custo": "$0–$1.50/xícara",
+        "Efeito": "NÍVEL DE ESTRESSE +1"
+      },
+      "tags": [
+        "café",
+        "estimulante"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "cerveja",
+      "nome": "Cerveja",
+      "categoria": "Suprimentos",
+      "tipo": "Bebida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Bebida alcoólica comum; a preferida na Fronteira é a cerveja Aspen \"extra-forte\" da Weyland-Yutani. O efeito dura até o próximo Período.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$4",
+        "Efeito": "NÍVEL DE ESTRESSE –1 e –1 em todas as habilidades baseadas em PERSPICÁCIA"
+      },
+      "tags": [
+        "álcool",
+        "bebida"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "bebida-destilada",
+      "nome": "Bebida Destilada",
+      "categoria": "Suprimentos",
+      "tipo": "Bebida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Uísque e vodka dominam o mercado. O efeito dura até o próximo Período.",
+      "atributos": {
+        "Peso": "1",
+        "Custo": "$10–$500/garrafa",
+        "Efeito": "NÍVEL DE ESTRESSE –1 e –1 em todas as habilidades baseadas em PERSPICÁCIA"
+      },
+      "tags": [
+        "álcool",
+        "bebida"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "refeicoes-especiais-colonia",
+      "nome": "Refeições Especiais da Colônia",
+      "categoria": "Suprimentos",
+      "tipo": "Comida",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Pratos criados pelas colônias planetárias, de hambúrgueres e bifes a pratos com fauna local comestível e algas.",
+      "atributos": {
+        "Peso": "1/4",
+        "Custo": "$20–$300",
+        "Efeito": "Abastecimento de Comida +1, NÍVEL DE ESTRESSE –1"
+      },
+      "tags": [
+        "comida",
+        "colônia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 137-139"
+    },
+    {
+      "id": "trator-daihotai-8x8",
+      "nome": "Trator Daihotai Série 8x8",
+      "categoria": "Veículos",
+      "tipo": "Veículo",
+      "raridade": "",
+      "fabricante": "Daihotai",
+      "descricao": "Veículo de trabalho para todos os fins, modular, com suspensão de oito rodas e cabine fechada e pressurizada. Aceita lâminas, escavadeiras, guindastes, brocas, colheitadeiras e trailers.",
+      "atributos": {
+        "Passageiros": "4",
+        "Manobrabilidade": "+0",
+        "Velocidade": "2",
+        "Casco": "6",
+        "Armadura": "4",
+        "Custo": "$17,000",
+        "Velocidade máxima": "148 km/h",
+        "Comprimento": "6.6 m",
+        "Armamento padrão": "Nenhum"
+      },
+      "tags": [
+        "veículo",
+        "terrestre",
+        "colônia"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 140-141"
+    },
+    {
+      "id": "weyland-vtt-nr-9",
+      "nome": "Weyland VTT NR-9",
+      "categoria": "Veículos",
+      "tipo": "Veículo",
+      "raridade": "",
+      "fabricante": "Weyland",
+      "descricao": "Veículo para todos os terrenos, da série NR da Weyland, ainda em uso na Fronteira. Pequeno, resistente e confiável, com gaiola de proteção e quatro bandas de rodagem.",
+      "atributos": {
+        "Passageiros": "1",
+        "Manobrabilidade": "+2",
+        "Velocidade": "2",
+        "Casco": "2",
+        "Armadura": "2",
+        "Custo": "$3,000",
+        "Velocidade máxima": "140 km/h",
+        "Comprimento": "3.2 m",
+        "Armamento padrão": "Nenhum"
+      },
+      "tags": [
+        "veículo",
+        "terrestre"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 140-141",
+      "observacao": "O texto do livro diz que o veículo acomoda duas pessoas; a tabela indica 1 passageiro."
+    },
+    {
+      "id": "tpb-m577",
+      "nome": "Transportador de Pessoal Blindado M577 (TPB)",
+      "categoria": "Veículos",
+      "tipo": "Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Transporte terrestre padrão da ACEU, carrega um esquadrão completo. Tem centro de comando tático, blindagem com pintura absorvente de laser, é anfíbio e à prova de vácuo e cabe no compartimento de uma Cheyenne.",
+      "atributos": {
+        "Passageiros": "13",
+        "Manobrabilidade": "+1",
+        "Velocidade": "3",
+        "Casco": "8",
+        "Armadura": "8",
+        "Custo": "$500,000",
+        "Velocidade máxima": "150 km/h",
+        "Comprimento": "9.2 m",
+        "Armamento padrão": "Torre de Canhão de Pulso de Plasma de Fase; Torre de Metralhadora de 20mm"
+      },
+      "tags": [
+        "veículo",
+        "terrestre",
+        "aceu",
+        "blindado"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 140-142"
+    },
+    {
+      "id": "girocarro-aerodyne",
+      "nome": "Girocarro Aerodyne",
+      "categoria": "Veículos",
+      "tipo": "Veículo",
+      "raridade": "",
+      "fabricante": "Aerodyne",
+      "descricao": "Automóvel de pouso e decolagem vertical típico dos mundos mais civilizados. Acionado por reator de microfusão, pode rodar com rodas ou voar sobre almofada de ar até 3.000 metros. Exige muita manutenção e é raro na Fronteira.",
+      "atributos": {
+        "Passageiros": "5",
+        "Manobrabilidade": "+3",
+        "Velocidade": "3",
+        "Casco": "4",
+        "Armadura": "3",
+        "Custo": "$40,000",
+        "Velocidade máxima": "250 km/h",
+        "Comprimento": "5.2 m",
+        "Armamento padrão": "Nenhum"
+      },
+      "tags": [
+        "veículo",
+        "aéreo",
+        "civil"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 140-143"
+    },
+    {
+      "id": "nave-tropas-cheyenne-ud-4l",
+      "nome": "Nave de Tropas ADV UD-4L Cheyenne",
+      "categoria": "Veículos",
+      "tipo": "Veículo",
+      "raridade": "",
+      "fabricante": "",
+      "descricao": "Nave de tropas tática da ACEU, que serve de transporte e de nave de guerra. É lançada da órbita direto ao combate, levando o M577, e depois dá apoio aéreo ao esquadrão.",
+      "atributos": {
+        "Passageiros": "15",
+        "Manobrabilidade": "+2",
+        "Velocidade": "4",
+        "Casco": "10",
+        "Armadura": "7",
+        "Custo": "$3,100,000",
+        "Comprimento": "25.2 m",
+        "Armamento padrão": "Metralhadora de 25mm; Lançador de Foguetes Mk16 Não-guiados Banshee 70 de 150 mm; 7 x Mísseis Táticos AGM-220C Cérbero II; 3 x Mísseis para Aeronaves Mata-leão MIA-90E"
+      },
+      "tags": [
+        "veículo",
+        "aéreo",
+        "aceu",
+        "nave"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 140-145"
+    },
+    {
+      "id": "transportador-elevador-carga-wy-37b",
+      "nome": "Transportador Elevador de Carga WY-37B",
+      "categoria": "Veículos",
+      "tipo": "Veículo",
+      "raridade": "",
+      "fabricante": "Weyland-Yutani",
+      "descricao": "Trenó sobre plataforma, com cabine de tripulação, guindaste extensível e dois motores potentes. A cabine pressurizada é própria para o vácuo, e ele faz transferências de carga em órbita baixa. Não é indicado para o espaço profundo.",
+      "atributos": {
+        "Passageiros": "3",
+        "Manobrabilidade": "–1",
+        "Velocidade": "3",
+        "Casco": "12",
+        "Armadura": "4",
+        "Custo": "$800,000",
+        "Comprimento": "34.2 m",
+        "Armamento padrão": "Nenhum"
+      },
+      "tags": [
+        "veículo",
+        "carga",
+        "suborbital"
+      ],
+      "fonte": "Livro Básico, cap. 6, p. 140-146"
+    }
+  ]
+}
