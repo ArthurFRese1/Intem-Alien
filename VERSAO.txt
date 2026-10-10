@@ -1,6 +1,8 @@
 ALIEN RPG — Banco de Itens
-Versão: 1.0.0
+Versão: 1.0.1
 Data: 2026-10-09
+
+Alterações 1.0.1: adicionado .nojekyll e instruções para GitHub Pages.
 
 Conteúdo desta versão:
 - Catálogo inicial com 88 itens do Livro Básico (capítulo 6, Equipamento).

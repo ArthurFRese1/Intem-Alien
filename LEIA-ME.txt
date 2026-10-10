@@ -19,6 +19,30 @@ Alternativa sem VS Code (precisa de Python): na pasta AlienItens, execute
   python -m http.server 8000
 e abra http://localhost:8000 no navegador.
 
+PUBLICAR NO GITHUB PAGES (GRATUITO)
+-----------------------------------
+1. Crie uma conta em https://github.com (se ainda não tiver).
+2. Clique em "New repository". Nome sugerido: AlienItens. Deixe como Public
+   (o plano gratuito só publica repositórios públicos).
+3. Na página do repositório, clique em "uploading an existing file" e envie
+   o CONTEÚDO da pasta AlienItens (index.html, style.css, script.js,
+   .nojekyll, LEIA-ME.txt, VERSAO.txt e a pasta dados com itens.json).
+   index.html precisa ficar na raiz do repositório, não dentro de outra pasta.
+   Clique em "Commit changes".
+4. Vá em Settings > Pages. Em "Build and deployment", escolha
+   Source: "Deploy from a branch", Branch: main, pasta: / (root). Salve.
+5. Aguarde 1 a 3 minutos. O endereço será:
+   https://SEU-USUARIO.github.io/AlienItens/
+
+Observações:
+- Não é preciso instalar nada nem usar Live Server: o GitHub Pages já é um servidor.
+- O arquivo .nojekyll evita que o GitHub processe o site com Jekyll.
+- Para atualizar o site, envie os arquivos alterados para o repositório.
+- Os itens personalizados ficam salvos no navegador de cada visitante
+  (LocalStorage); não são enviados para o GitHub nem compartilhados.
+- Se o catálogo não carregar, apague o cache do navegador (Ctrl+F5) e confira
+  se a pasta dados/itens.json foi enviada.
+
 ESTRUTURA
 ---------
 index.html    Estrutura da página
