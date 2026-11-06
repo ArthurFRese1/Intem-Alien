@@ -206,3 +206,50 @@ select{min-width:0}
 
 /* Ajustes de consulta de criaturas */
 .alien-detail-placeholder{min-height:150px;margin-bottom:14px;background:repeating-linear-gradient(135deg,#111113,#111113 12px,#171719 12px,#171719 24px);border:1px dashed var(--ouro-escuro);color:var(--texto-suave);font-size:.78rem;letter-spacing:.12em;text-align:center;padding:18px}.alien-detail-placeholder span{display:block}.cartao-descricao{overflow-wrap:anywhere}.pane-detalhe{line-height:1.65}.detalhe-tabs{overflow-x:auto;flex-wrap:nowrap}.aba-detalhe{white-space:nowrap;flex:0 0 auto}
+/* =========================================
+   ESTATÍSTICAS DOS ALIENS
+========================================= */
+
+.alien-estatisticas {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 2px 0 8px;
+}
+
+.estatistica-alien-linha {
+    padding: 0 0 9px;
+    border-bottom: 1px solid var(--borda);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.estatisticas-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+    padding: 12px;
+    border-left: 2px solid var(--ouro);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.estatisticas-grupo h4 {
+    margin: 0 0 3px;
+    color: var(--ouro-claro);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.estatisticas-grupo .estatistica-alien-linha:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Características */
+
+.alien-caracteristicas {
+    line-height: 1.8;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
