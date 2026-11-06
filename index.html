@@ -1,151 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ALIEN RPG — Banco de Itens</title>
-  <meta name="description" content="Catálogo de consulta de itens de ALIEN RPG.">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALIEN RPG — Banco de Itens e Aliens</title>
+  <meta name="description" content="Catálogo independente de itens e criaturas de ALIEN RPG.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="cabecalho"><div class="cabecalho-conteudo">
+  <div class="marca"><span class="marca-icone">△</span><div><h1 class="marca-nome">ALIEN RPG</h1><p class="marca-sub">BANCO DE ITENS E ALIENS</p></div></div>
+  <div class="cabecalho-acoes"><button class="botao botao-destaque" id="btn-adicionar-item">+ Adicionar item</button><button class="botao botao-destaque" id="btn-adicionar-alien" hidden>+ Adicionar alien</button></div>
+</div><nav class="navegacao" aria-label="Áreas do catálogo"><button class="aba ativa" data-aba="itens">Itens</button><button class="aba" data-aba="aliens">Aliens</button></nav></header>
+<main class="pagina">
+<section id="pagina-itens" class="pagina-aba">
+  <section class="apresentacao"><h2>Catálogo de itens</h2><p>Consulte armas, proteções, tecnologia, medicina, suprimentos e veículos. Pesquise, filtre e abra cada item para ver os detalhes. Você também pode cadastrar seus próprios itens, salvos neste navegador.</p></section>
+  <section class="estatisticas"><div class="estatistica"><span class="estatistica-valor" id="stat-total">0</span><span class="estatistica-rotulo">Itens cadastrados</span></div><div class="estatistica"><span class="estatistica-valor" id="stat-resultados">0</span><span class="estatistica-rotulo">Resultados</span></div><div class="estatistica"><span class="estatistica-valor" id="stat-categorias">0</span><span class="estatistica-rotulo">Categorias</span></div></section>
+  <section class="painel controles"><label class="campo-busca"><span class="sr-only">Pesquisar itens</span><input id="busca-itens" type="search" placeholder="Pesquisar itens, fabricantes, palavras-chave…"></label><div class="rapidos" id="rapidos-itens"></div><div class="filtros"><label class="filtro">Categoria<select id="filtro-categoria"></select></label><label class="filtro">Tipo<select id="filtro-tipo"></select></label><label class="filtro" id="grupo-raridade" hidden>Raridade<select id="filtro-raridade"></select></label><label class="filtro">Ordenar por<select id="ordenacao"><option value="nome-asc">Nome (A a Z)</option><option value="nome-desc">Nome (Z a A)</option><option value="categoria">Categoria</option></select></label></div><div class="barra-acoes"><button class="botao" id="btn-limpar-itens">Limpar filtros</button><div class="visualizacao"><button class="botao botao-visual" id="btn-grade" aria-pressed="true">Grade</button><button class="botao botao-visual" id="btn-lista" aria-pressed="false">Lista</button></div></div></section>
+  <p class="contagem" id="contagem-itens"></p><section id="resultados-itens" class="resultados modo-grade"></section><p class="sem-resultados" id="sem-itens" hidden>Nenhum item encontrado.</p>
+</section>
+<section id="pagina-aliens" class="pagina-aba" hidden>
+  <section class="apresentacao"><h2>Banco de aliens</h2><p>Explore espécies, fases e variantes. Abra cada registro para consultar sua descrição, características e informações de jogo. Você também pode cadastrar suas próprias criaturas, salvas neste navegador.</p></section>
+  <section class="estatisticas"><div class="estatistica"><span class="estatistica-valor" id="alien-total">0</span><span class="estatistica-rotulo">Criaturas cadastradas</span></div><div class="estatistica"><span class="estatistica-valor" id="alien-resultados">0</span><span class="estatistica-rotulo">Resultados</span></div><div class="estatistica"><span class="estatistica-valor" id="alien-especies">0</span><span class="estatistica-rotulo">Espécies / grupos</span></div></section>
+  <section class="painel controles"><label class="campo-busca"><span class="sr-only">Pesquisar aliens</span><input id="busca-aliens" type="search" placeholder="Pesquisar nome, espécie, fase ou classificação…"></label><div class="rapidos" id="rapidos-aliens"></div><div class="filtros"><label class="filtro">Espécie<select id="filtro-especie"></select></label><label class="filtro">Fase<select id="filtro-fase"></select></label><label class="filtro">Classificação<select id="filtro-classificacao"></select></label><label class="filtro">Ordenar por<select id="ordenacao-aliens"><option value="nome-asc">Nome (A a Z)</option><option value="nome-desc">Nome (Z a A)</option><option value="especie">Espécie</option></select></label></div><div class="barra-acoes"><button class="botao" id="btn-limpar-aliens">Limpar filtros</button><div class="colecao-acoes"><button class="botao" id="btn-minhas-colecoes">Minhas coleções</button><button class="botao" id="btn-favoritos">Favoritos</button></div></div></section>
+  <p class="contagem" id="contagem-aliens"></p><section id="resultados-aliens" class="resultados modo-grade"></section><p class="sem-resultados" id="sem-aliens" hidden>Nenhuma criatura encontrada.</p>
+</section>
 
-  <header class="cabecalho">
-    <div class="cabecalho-conteudo">
-      <div class="marca">
-        <span class="marca-icone" aria-hidden="true">&#9651;</span>
-        <div>
-          <h1 class="marca-nome">ALIEN RPG</h1>
-          <p class="marca-sub">Banco de Itens</p>
-        </div>
-      </div>
-      <button type="button" class="botao botao-destaque" id="btn-adicionar">+ Adicionar item</button>
-    </div>
-  </header>
+</main>
+<footer class="rodape"><p>ALIEN RPG — Projeto independente de consulta. As descrições são resumos próprios; consulte o livro para as regras completas.</p><p>ALIEN e ALIEN RPG pertencem a seus respectivos titulares. Este site não é oficial.</p></footer>
 
-  <main class="pagina">
-
-    <section class="apresentacao">
-      <h2>Catálogo de itens</h2>
-      <p>Consulte armas, proteções, tecnologia, medicina, suprimentos e veículos. Pesquise, filtre e abra cada item para ver os detalhes. Você também pode cadastrar itens próprios, que ficam salvos neste navegador.</p>
-    </section>
-
-    <section class="estatisticas" aria-label="Estatísticas">
-      <div class="estatistica">
-        <span class="estatistica-valor" id="stat-total">0</span>
-        <span class="estatistica-rotulo">Itens cadastrados</span>
-      </div>
-      <div class="estatistica">
-        <span class="estatistica-valor" id="stat-resultados">0</span>
-        <span class="estatistica-rotulo">Resultados</span>
-      </div>
-      <div class="estatistica">
-        <span class="estatistica-valor" id="stat-categorias">0</span>
-        <span class="estatistica-rotulo">Categorias</span>
-      </div>
-    </section>
-
-    <section class="painel controles" aria-label="Pesquisa e filtros">
-      <label class="campo-busca" for="busca">
-        <span class="sr-only">Pesquisar itens</span>
-        <input type="search" id="busca" placeholder="Pesquisar itens, fabricantes, palavras-chave…" autocomplete="off">
-      </label>
-
-      <div class="rapidos" id="rapidos" role="group" aria-label="Categorias rápidas"></div>
-
-      <div class="filtros">
-        <label class="filtro">
-          <span>Categoria</span>
-          <select id="filtro-categoria"></select>
-        </label>
-        <label class="filtro">
-          <span>Tipo</span>
-          <select id="filtro-tipo"></select>
-        </label>
-        <label class="filtro" id="grupo-raridade" hidden>
-          <span>Raridade</span>
-          <select id="filtro-raridade"></select>
-        </label>
-        <label class="filtro">
-          <span>Ordenar por</span>
-          <select id="ordenacao">
-            <option value="nome-asc">Nome (A a Z)</option>
-            <option value="nome-desc">Nome (Z a A)</option>
-            <option value="categoria">Categoria</option>
-          </select>
-        </label>
-      </div>
-
-      <div class="barra-acoes">
-        <button type="button" class="botao" id="btn-limpar">Limpar filtros</button>
-        <div class="visualizacao" role="group" aria-label="Modo de visualização">
-          <button type="button" class="botao botao-visual" id="btn-grade" aria-pressed="true">Grade</button>
-          <button type="button" class="botao botao-visual" id="btn-lista" aria-pressed="false">Lista</button>
-        </div>
-      </div>
-    </section>
-
-    <div id="aviso-erro" class="aviso-erro" role="alert" hidden></div>
-    <p id="contagem" class="contagem" aria-live="polite"></p>
-
-    <section id="resultados" class="resultados modo-grade" aria-label="Lista de itens"></section>
-    <p id="sem-resultados" class="sem-resultados" hidden>Nenhum item encontrado. Tente outros termos ou limpe os filtros.</p>
-
-  </main>
-
-  <footer class="rodape">
-    <p>ALIEN RPG — Banco de Itens · Projeto independente de consulta. Os dados do catálogo resumem informações do Livro Básico; consulte o livro para as regras completas.</p>
-    <p>ALIEN e ALIEN RPG pertencem a seus respectivos titulares. Este site não é oficial.</p>
-  </footer>
-
-  <!-- Janela de detalhes -->
-  <div class="modal" id="modal-detalhes" hidden>
-    <div class="modal-fundo" data-fechar></div>
-    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="detalhes-titulo">
-      <button type="button" class="modal-fechar" data-fechar aria-label="Fechar">&times;</button>
-      <div id="detalhes-corpo"></div>
-    </div>
-  </div>
-
-  <!-- Janela de cadastro -->
-  <div class="modal" id="modal-cadastro" hidden>
-    <div class="modal-fundo" data-fechar></div>
-    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="cadastro-titulo">
-      <button type="button" class="modal-fechar" data-fechar aria-label="Fechar">&times;</button>
-      <h2 id="cadastro-titulo" class="modal-titulo">Adicionar item personalizado</h2>
-      <form id="form-cadastro" novalidate>
-        <label class="campo">
-          <span>Nome *</span>
-          <input type="text" id="cad-nome" maxlength="120" required>
-        </label>
-        <label class="campo">
-          <span>Categoria</span>
-          <input type="text" id="cad-categoria" maxlength="60" list="lista-categorias" placeholder="Padrão: Personalizados">
-          <datalist id="lista-categorias"></datalist>
-        </label>
-        <label class="campo">
-          <span>Tipo</span>
-          <input type="text" id="cad-tipo" maxlength="60" list="lista-tipos">
-          <datalist id="lista-tipos"></datalist>
-        </label>
-        <label class="campo">
-          <span>Fabricante</span>
-          <input type="text" id="cad-fabricante" maxlength="80">
-        </label>
-        <label class="campo">
-          <span>Descrição</span>
-          <textarea id="cad-descricao" rows="4" maxlength="1500"></textarea>
-        </label>
-        <p class="erro-form" id="cad-erro" role="alert" hidden></p>
-        <div class="modal-botoes">
-          <button type="button" class="botao" data-fechar>Cancelar</button>
-          <button type="submit" class="botao botao-destaque">Salvar item</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<!-- Modal de detalhes -->
+<div class="modal" id="modal-detalhes" hidden><div class="modal-fundo" data-fechar></div><div class="modal-caixa" role="dialog" aria-modal="true"><button class="modal-fechar" data-fechar aria-label="Fechar">×</button><div id="detalhes-corpo"></div></div></div>
+<!-- Cadastro de item -->
+<div class="modal" id="modal-item" hidden><div class="modal-fundo" data-fechar></div><div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="item-titulo"><button class="modal-fechar" data-fechar>×</button><h2 id="item-titulo" class="modal-titulo">Adicionar item personalizado</h2><form id="form-item" class="form-grid"><label class="campo">Nome *<input id="item-nome" required maxlength="120"></label><label class="campo">Categoria<input id="item-categoria" list="categorias-item" placeholder="Personalizados"><datalist id="categorias-item"></datalist></label><label class="campo">Tipo<input id="item-tipo" maxlength="60"></label><label class="campo">Fabricante<input id="item-fabricante" maxlength="80"></label><label class="campo campo-largo">Descrição<textarea id="item-descricao" rows="3" maxlength="3000"></textarea></label><label class="campo campo-largo">Características / dados (um por linha: Nome: valor)<textarea id="item-atributos" rows="4" placeholder="Peso: 2 kg&#10;Efeito: ..."></textarea></label><label class="campo campo-largo">Observações<textarea id="item-observacao" rows="2" maxlength="1500"></textarea></label><p class="erro-form campo-largo" id="item-erro" hidden></p><div class="modal-botoes campo-largo"><button type="button" class="botao" data-fechar>Cancelar</button><button class="botao botao-destaque" type="submit">Salvar item</button></div></form></div></div>
+<!-- Cadastro de alien -->
+<div class="modal" id="modal-alien" hidden><div class="modal-fundo" data-fechar></div><div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="alien-titulo"><button class="modal-fechar" data-fechar>×</button><h2 id="alien-titulo" class="modal-titulo">Adicionar alien personalizado</h2><form id="form-alien" class="form-grid"><label class="campo">Nome *<input id="alien-nome" required maxlength="120"></label><label class="campo">Espécie<input id="alien-especie" maxlength="100" placeholder="Ex.: Xenomorfo"></label><label class="campo">Fase<input id="alien-fase" maxlength="100"></label><label class="campo">Classificação<input id="alien-classificacao" maxlength="100"></label><label class="campo campo-largo">Imagem do dispositivo<input id="alien-imagem" type="file" accept="image/png,image/jpeg,image/webp"><small>A imagem será salva neste navegador. Use uma imagem de até 1,5 MB.</small></label><label class="campo campo-largo">Descrição<textarea id="alien-descricao" rows="4" maxlength="4000"></textarea></label><label class="campo campo-largo">Características<textarea id="alien-caracteristicas" rows="4" maxlength="4000"></textarea></label><label class="campo campo-largo">Estatísticas<textarea id="alien-estatisticas" rows="4" maxlength="4000"></textarea></label><label class="campo campo-largo">Observações<textarea id="alien-observacoes" rows="3" maxlength="2000"></textarea></label><p class="erro-form campo-largo" id="alien-erro" hidden></p><div class="modal-botoes campo-largo"><button type="button" class="botao" data-fechar>Cancelar</button><button class="botao botao-destaque" type="submit">Salvar alien</button></div></form></div></div>
+<!-- Coleções -->
+<div class="modal" id="modal-colecoes" hidden><div class="modal-fundo" data-fechar></div><div class="modal-caixa" role="dialog" aria-modal="true"><button class="modal-fechar" data-fechar>×</button><h2 class="modal-titulo">Minhas coleções</h2><form id="form-colecao" class="linha-form"><input id="colecao-nome" placeholder="Nome da nova coleção" maxlength="80" required><button class="botao botao-destaque">Criar</button></form><div id="lista-colecoes"></div></div></div>
+<div class="toast" id="toast" hidden></div>
+<script src="script.js"></script>
+</body></html>
